@@ -137,6 +137,10 @@ git branch -M main
 
 git push -u origin main
 
-(hace un git push -u origin main y especifica que va a pushear a la rama remota con nombre main )
+(hace un git push -u origin main y especifica que va a pushear a la rama remota con nombre main ).
+
+
+De este modo ya tenemos nuestro proyecto que tenia git inicializado en GitHub.
+
 
 
