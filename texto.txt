@@ -116,5 +116,27 @@ Ahora creo un nuevo repositorio:
 
 prueba-git
 
+En este caso supongamos que ya tengo un repositorio inicializado, es decir que el proyeto ya tiene git, entonces usamos la segunda opcion:
+
+…or push an existing repository from the command line
+git remote add origin https://github.com/AntonBlood/ifix-proyecto-coder.git
+git branch -M main
+git push -u origin main
+
+
+Copiamos el codigo y lo ponemos en la terminal: 
+
+git remote add origin https://github.com/AntonBlood/ifix-proyecto-coder.git
+
+(Especifica cual va a ser la url remota)
+
+
+git branch -M main
+
+(Cambia el nombre de la rama a main)
+
+git push -u origin main
+
+(hace un git push -u origin main y especifica que va a pushear a la rama remota con nombre main )
 
 
