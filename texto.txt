@@ -1,0 +1,120 @@
+Consejo - Intentar no tener repositorios anidados.
+
+GITHUB.-
+
+Es una especie de red social de programadores. Con este sitio podemos subir nuestros proyectos y lograr que otras personas colaboren con ellos.
+
+CREACION DE UN REPOSITORIO REMOTO EN GITHUB--------------------------------------
+
+rm -fr .git    #Elimina el repositorios
+
+Coloco crear nuevo repositorio en mi cuenta de GitHub.
+Coloco el nombre del repositorio, ejemplo:
+
+ifix-proyecto-coder
+
+Puedo colocar una descripcion que es opcional.
+
+
+Public: cualquiera lo va a poder acceder pero tiene un par de  ventajas como GitHub pages.
+
+Private: Tendremos que darle permisos a cada persona que quiera acceder al repositorio, en el privado no se podra ejecutar GitHub pages.
+
+
+Tambien nos permite agregar un archivo README, en este caso no lo agregamos y dejamos el resto por defecto. Creamos el repositorio.
+
+
+
+Hecho ello nos dan 2 opciones:
+
+---------------------------------------------------------------------------------
+
+…or create a new repository on the command line
+echo "# ifix-proyecto-coder" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/AntonBlood/ifix-proyecto-coder.git
+git push -u origin main
+
+---------------------------------------------------------------------------------
+
+…or push an existing repository from the command line
+git remote add origin https://github.com/AntonBlood/ifix-proyecto-coder.git
+git branch -M main
+git push -u origin main
+
+---------------------------------------------------------------------------------
+
+La primera me sirve para repositorios donde todavia no he realizado el git init, donde no estoy trabajando con git, esa opcion crea un repositorio y ademas lo sube a github.
+
+En este caso como no hemos realizado git init utilizamos la primera:
+copiamos el codigo y lo pegamos en la terminal de bash, al ultimo le damos enter y ya se subio nuestro proyecto a GitHub.
+
+Si ahora refresco en GitHub, ya aparece el README, el nombre del proyecto, el resto de archivos no los veo por que tengo que hacer el git add, git commit, etc.
+
+
+Entonces en la terminal hago:
+
+git add .
+
+git commit -m "Primer commit"
+
+
+Repasamos el codigo que pegamos:
+
+
+echo "# ifix-proyecto-coder" >> README.md  
+
+(Esto es para crear un archivo .md con el nombre del proyecto)
+
+
+git init
+
+(Para crear un repositorio)
+
+git add README.md
+
+(hace el git add del archivo del archivo README.md que creamos )
+
+
+git commit -m "first commit"
+
+(hace el commit del README.md)
+
+git branch -M main
+
+(Nombra esta rama como main )
+
+
+git remote add origin https://github.com/AntonBlood/ifix-proyecto-coder.git
+
+(Le especificamos cual es la url del repositorio remota, es decir a donde va a subir los archivos )
+
+git push -u origin main
+
+(git push lo que hace es subir los archivos del repositorio local al remoto, nos va a permitir enviar cualquier cambio a GitHub)
+
+
+Hacemos un nuevo:
+
+git add .
+
+git commit -m "Agrego instrucciones"
+
+
+git push    #Sube los cambios al repositorio en la nube
+
+Cuando hago git push no hace falta indicarle el nombre de la rama remota, pues el git push -u origin main solo lo hago una vez. 
+
+Ahora si veo mi repositorio en la nube, ya tengo los archivos subidos a GitHub.
+
+--------------------------------------------------------------------------------
+
+Ahora creo un nuevo repositorio:
+
+prueba-git
+
+
+
