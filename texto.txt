@@ -143,4 +143,46 @@ git push -u origin main
 De este modo ya tenemos nuestro proyecto que tenia git inicializado en GitHub.
 
 
+52:40
+Ahora desde un repositorio de GitHub puedo ver las ramas, si yo trabajo con otra rama a nivel local, tambien tengo que pushear esa rama.
+
+Puedo ver el historial de commits y en cada uno de ellos puedo ver los cambios, puedo dejar un comentario, puedo ver los archivos de ese commit en especifico.
+
+Tambien se pueden descargar los archivos.
+
+
+Ahora supongamos que yo edito algo desde GitHub
+54:15
+
+Se puede pensar esto tanto como una edicion desde GitHub o como otro compañero, otro colega desarrollador que esta trabajando y tambien sube sus cambios:
+
+modificacion de Santi
+
+gitHub deja hacer el commit
+
+Entonces ahora mi repositorio remoto, mi repositorio en GitHub tiene un cambio que yo no tengo en mi repositorio local.
+
+Ahora si yo hago un 
+git add .
+
+git commit -m "******"
+
+git push
+
+Me lo rechaza, yo al pushear los cambios a la url.
+Esto fue rechazado por que el repositorio remoto esta mas avanzado que mi repositorio local.
+
+Si yo hago un git log --online
+
+No tengo el commit que se realizo en el GitHub y siempre que pase esto no podremos hacer un push, yo antes de pushear tengo que traer los cambios del repositorio remoto, ya sea por que alguien que no soy yo avanzo  o por que yo modifique algo en el repositorio remoto.
+
+
+Para traerme esos cambios utilizo:
+
+git pull
+
+Ya me aparece la modificacion de Santi.
+
+Ahora si realizo un git push no habra ningun problema.
+
 
