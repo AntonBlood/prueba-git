@@ -189,6 +189,20 @@ Lo importante es que se este al dia antes del push.
 58:00 - 1:05:00
 
 
+Git clone.-
+
+Supongamos que yo agarro otra computadora y quiero trabajar con un repositorio de GitHub. 
+
+Para ello necesito la url del repositorio de GitHub, la copio 
+y en la ubicacion donde quiero que se me cree el clon, es decir a donde quiero que se me cree la nueva carpeta con el proyecto pero que no sea dentro de otro repositorio.
+
+y en la terminal escribimos:
+
+git clone "Pegamos la url del repositorio"
+
+Y de esa manera se me crea el clon en la carpeta designada, el git clone ademas de traerme los archivos ya me deja el proyecto listo para trabajar con GitHub, es decir puedo hacer el add, commit, push y todo eso va a ir a mi repositorio en la nube.
+
+
 
 
 
