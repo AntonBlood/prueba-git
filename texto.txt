@@ -184,5 +184,11 @@ git pull
 Ya me aparece la modificacion de Santi.
 
 Ahora si realizo un git push no habra ningun problema.
+Lo importante es que se este al dia antes del push.
+
+58:00 - 1:05:00
+
+
+
 
 
